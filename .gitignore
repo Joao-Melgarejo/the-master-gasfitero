@@ -1,0 +1,7 @@
+images/*
+!images/optimized/
+!images/optimized/**
+!images/clients/
+!images/clients/**
+release/
+__pycache__/

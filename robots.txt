@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /form-action.html
+
+Sitemap: https://themastergasfitero.com/sitemap.xml

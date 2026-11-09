@@ -1,0 +1,242 @@
+He analizado a fondo el sitio **gasfiteroenlimaperu.com** (marca "Hidrosan"). Aquí tienes el desglose completo de su estructura, contenido y una guía para recrear algo similar pero mejorado con los datos de tu cliente.
+
+## Arquitectura general del sitio
+
+Es un sitio construido en **WordPress** (probablemente con el constructor Elementor o similar) con solo 3 páginas en el menú: **Inicio, Servicios y Blog**. Es un sitio de captación de leads muy simple, orientado a convertir visitas en contactos por WhatsApp/llamada. Todo el "embudo" empuja al usuario hacia un único número de WhatsApp.
+
+## Estructura de la página de Inicio (secciones en orden)
+
+**1. Barra superior (top bar):** franja azul oscuro con mensaje de bienvenida a la izquierda ("¡Bienvenido a nuestro sitio web!") y dirección con ícono de ubicación a la derecha ("Jr. García Villón 101, Lima").
+
+**2. Header/navegación:** logo a la izquierda, menú a la derecha (Inicio, Servicios, Blog). Fijo y limpio, fondo blanco.
+
+**3. Hero (banner principal):** imagen de fondo de un gasfitero trabajando, título grande "Servicio de Gasfitería en Lima", un subtítulo corto y un botón CTA turquesa "Contáctanos ›" que abre WhatsApp con mensaje pre-cargado.
+
+**4. Bloque de presentación:** imagen a la izquierda + texto a la derecha con dos titulares ("Gasfitero 24 horas" / "Gasfitería y Electricidad"), dos párrafos descriptivos y otro botón "Contáctanos".
+
+**5. "¿Por qué elegir nuestra empresa?":** cuatro tarjetas con íconos que destacan los diferenciadores — atención rápida, servicio garantizado, +10 años de experiencia y tarifas claras — acompañadas de una foto grande al lado.
+
+**6. Galería de trabajos:** grilla de 6 imágenes (2 filas × 3) bajo el título "Servicios realizados de nuestros Gasfitero a domicilio Lima". Las imágenes son ampliables (lightbox).
+
+**7. Tabla de precios:** dos planes tipo "pricing cards" — **Servicio pequeño (S/. 100.00)** y **Servicio grande (S/. 250.00)** — cada uno con una lista de lo que incluye y su botón de contacto.
+
+**8. Sección FAQ (acordeón):** bajo el título "gasfitero emergencia las 24 horas", con 6 preguntas frecuentes desplegables (tipos de trabajo, emergencias, cobertura de distritos, costos, garantía y duración del servicio).
+
+**9. CTA final:** "Contacta Gasfitero en Lima cerca de ti" con texto persuasivo y botón.
+
+**10. Footer:** cuatro columnas — logo + descripción, datos de contacto (teléfono, email, dirección, horario), lista "Nuestros Servicios" y "Últimos artículos" del blog. Debajo, franja de copyright.
+
+**Elementos flotantes:** un botón flotante de **WhatsApp** (esquina inferior derecha) y un botón **"Call Now"** que dispara una llamada telefónica.
+
+## Paleta de colores y estilo visual
+
+El sitio usa **azul marino oscuro** (aproximadamente `#0a2b5e` / `#12356b`) para la barra superior, títulos y textos destacados; **turquesa/verde agua** (aprox. `#3fd0c9` / `#40c4b8`) para los botones CTA; blanco y gris muy claro para fondos de secciones. Tipografía sans-serif limpia. El estilo transmite confianza y profesionalismo con toque técnico.
+
+## Elementos de conversión (importante copiar bien)
+
+El sitio tiene una estrategia de conversión clara y consistente: **todos los botones llevan al mismo WhatsApp** con un mensaje pre-escrito (formato `https://wa.me/NUMERO?text=Hola%20necesito%20un%20*Servicio...`), hay un botón flotante de WhatsApp siempre visible, un botón de llamada directa, y CTAs repetidos en cada sección. Esto reduce la fricción y multiplica los puntos de contacto.
+
+## Observaciones y errores que deberías corregir (para hacerlo "mejorado")
+
+Detecté varios descuidos en el original que tú puedes evitar. En el footer, la sección "Nuestros Servicios" lista **"Psicólogos para adolescentes, para empresas, en línea..."** — claramente copiaron una plantilla de otro rubro y olvidaron cambiarla. Los artículos del blog también son de temática ajena ("Importancia de la tolerancia en la familia", "¿Cómo ser auténtico?"), no de gasfitería. Además, el enlace del teléfono (`tel:912621611`) no coincide con el número mostrado (924101933), y el email del footer (`ventasgptr@gmail.com`) no coincide con el del enlace mailto (`info@gasfiteroenlimaperu.com`). Son fallos de consistencia que restan profesionalismo.
+
+## Recomendaciones para tu versión mejorada
+
+Para superar al original te recomendaría: contenido de blog realmente enfocado en gasfitería (guías, tips de emergencias, mantenimiento) que ayuda al SEO; **testimonios/reseñas reales** de clientes (el original no tiene); un **formulario de contacto** además del WhatsApp para captar leads que prefieren no chatear; una sección de **cobertura por distritos** con las zonas donde atiende tu cliente; **fotos propias** de trabajos reales en lugar de stock; sellos de garantía y certificaciones visibles; velocidad de carga optimizada; datos estructurados de negocio local (LocalBusiness Schema) para Google; y coherencia total en teléfono, email y dirección en todo el sitio.
+
+## Plantilla de datos que necesito de tu cliente
+
+Para armar tu página con la misma estructura, reúne esta información:
+
+Nombre de la marca/empresa y logo; ciudad/zona de cobertura; eslogan corto para el hero; teléfono y WhatsApp (con el mensaje pre-cargado que quieras); email real; dirección física y horario de atención; 4 diferenciadores (para las tarjetas del "¿Por qué elegirnos?"); lista de servicios; estructura de precios (planes con lo que incluye cada uno); 6 preguntas frecuentes con sus respuestas; fotos de trabajos reales para la galería; y enlaces a redes sociales si las tiene.
+
+Si me pasas los datos de tu cliente, puedo ayudarte a redactar los textos de cada sección (hero, descripciones, FAQ, precios) ya adaptados a su negocio, listos para colocar en tu plantilla. ¿Quieres que empecemos por ahí?
+
+Aquí tienes el **diagnóstico técnico completo** listo para copiar y pegar a Claude Cowork. Incluí el stack real, las especificaciones exactas de diseño y código base funcional.
+
+---
+
+# DIAGNÓSTICO TÉCNICO — Sitio de referencia (gasfiteroenlimaperu.com)
+
+## 1. Stack tecnológico del sitio original
+
+El sitio de referencia corre sobre **WordPress 7.0.1** con **Elementor + Elementor Pro** como constructor visual, tema **"fyn"**, y dos plugins de conversión: **Creame WhatsApp Me** (botón flotante de WhatsApp) y **Call Now Button** (botón de llamada). Es una arquitectura "no-code/low-code": rápida de montar pero pesada y poco flexible para un rediseño total.
+
+**Recomendación de stack para tu versión mejorada** (ya que quieres cambiar el diseño completamente y trabajarlo con Claude Cowork por código): te conviene salir de la dependencia de Elementor. Dos caminos según lo que ya tengas:
+
+Si tu página base ya es WordPress y quieres mantenerla, la opción más limpia es un tema a medida en bloques (FSE) o **Astra/GeneratePress + bloques nativos**, evitando Elementor para ganar velocidad. Si en cambio quieres control total y máximo rendimiento, te recomiendo un sitio estático moderno: **Astro** (ideal para landing pages, HTML casi puro, súper rápido y SEO-friendly) o **Next.js** con **Tailwind CSS**. Para una landing de servicios locales como esta, **Astro + Tailwind** es la combinación óptima: carga instantánea, fácil de mantener y perfecta para que Claude Cowork la genere por código.
+
+## 2. Paleta de colores exacta (extraída del CSS real)
+
+```
+Azul marino principal (títulos, top bar):  #003669
+Azul marino alterno (fondos oscuros):      #063764
+Turquesa CTA (botones):                     #43ccc7
+Turquesa hover (sugerido, más oscuro):      #3fbfbb
+Gris de fondo de secciones:                 #f6f6f6
+Blanco:                                      #ffffff
+Texto gris secundario:                       #54595f
+Verde WhatsApp:                              #00BB2D (hover #01a127)
+```
+
+## 3. Tipografía (valores reales)
+
+La fuente principal es **Roboto** (sans-serif), cargada desde Google Fonts. Especificaciones exactas medidas en el sitio:
+
+```
+H1 (hero):   Roboto, 55px, weight 600, line-height 55px, color #ffffff
+H2 (títulos): Roboto, 38px, weight 600, color #003669
+Cuerpo:       Roboto, 15px, weight 400, color #54595f (o blanco sobre fondos oscuros)
+Botón CTA:    Roboto, 15px, weight 500
+```
+
+Para tu versión mejorada podrías subir el line-height del cuerpo a ~1.6 (el original lo tiene muy apretado, 15px, un defecto de legibilidad) y considerar una fuente de títulos con más carácter como **Poppins** o **Montserrat** manteniendo Roboto para el cuerpo.
+
+## 4. Especificaciones del botón CTA (el elemento clave de conversión)
+
+```
+background: #43ccc7;
+color: #ffffff;
+padding: 18px 40px;
+border-radius: 0px;   ← esquinas rectas (puedes mejorarlo a 6-8px para look moderno)
+font-size: 15px;
+font-weight: 500;
+```
+
+El sitio tiene **12 secciones** en Elementor. Todos los CTA apuntan al mismo enlace de WhatsApp con mensaje pre-cargado:
+`https://wa.me/51XXXXXXXXX?text=Hola%20necesito%20un%20*Servicio%20de%20Gasfiteria*`
+
+## 5. Estructura de secciones a recrear (en orden)
+
+Top bar → Header con nav → Hero con imagen de fondo y CTA → Bloque presentación (imagen + texto) → "¿Por qué elegirnos?" (4 tarjetas con íconos) → Galería de trabajos (grid 2×3) → Tabla de precios (2 planes) → FAQ acordeón (6 preguntas) → CTA final → Footer 4 columnas → Copyright. Más botón flotante de WhatsApp y botón de llamada fijos.
+
+## 6. Código base (HTML + Tailwind) listo para Claude Cowork
+
+Este es un esqueleto funcional con la paleta y estructura ya aplicadas. Pásalo a Claude Cowork como punto de partida:
+
+```html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>[NOMBRE EMPRESA] | Servicios de Gasfitería 24/7</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: {
+          navy: '#003669', navyDark: '#063764',
+          turquoise: '#43ccc7', turquoiseDark: '#3fbfbb',
+          softgray: '#f6f6f6', wa: '#00BB2D'
+        },
+        fontFamily: { heading: ['Poppins','sans-serif'], body: ['Roboto','sans-serif'] }
+      }}
+    }
+  </script>
+</head>
+<body class="font-body text-[#54595f]">
+
+  <!-- TOP BAR -->
+  <div class="bg-navy text-white text-sm py-2 px-4 flex justify-between">
+    <span>¡Bienvenido a nuestro sitio!</span>
+    <span>📍 [DIRECCIÓN]</span>
+  </div>
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <nav class="max-w-6xl mx-auto flex items-center justify-between py-4 px-4">
+      <img src="[LOGO]" alt="[NOMBRE]" class="h-12">
+      <ul class="hidden md:flex gap-8 font-heading text-navy font-semibold">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#precios">Precios</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="relative h-[600px] flex items-center"
+    style="background:linear-gradient(rgba(0,54,105,.55),rgba(0,54,105,.55)),url('[IMG_HERO]') center/cover">
+    <div class="max-w-6xl mx-auto px-4 text-white">
+      <h1 class="font-heading text-5xl md:text-6xl font-bold leading-tight max-w-xl">
+        Servicio de Gasfitería en [CIUDAD]
+      </h1>
+      <p class="mt-4 max-w-md text-lg">[SUBTÍTULO: reparación de fugas, tuberías y más. Atención a domicilio con garantía.]</p>
+      <a href="https://wa.me/51[TELÉFONO]?text=Hola%20necesito%20un%20Servicio%20de%20Gasfiteria"
+         class="inline-block mt-8 bg-turquoise hover:bg-turquoiseDark text-white font-medium py-4 px-10 rounded-md transition">
+        Contáctanos ›
+      </a>
+    </div>
+  </section>
+
+  <!-- ¿POR QUÉ ELEGIRNOS? -->
+  <section class="py-20 bg-softgray">
+    <h2 class="text-center font-heading text-4xl font-bold text-navy mb-12">¿Por qué elegirnos?</h2>
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-6 px-4">
+      <!-- Repetir tarjeta x4 -->
+      <div class="bg-white p-8 rounded-lg text-center shadow">
+        <div class="text-turquoise text-4xl mb-4">⚡</div>
+        <h3 class="font-heading text-turquoise font-semibold mb-2">Atención rápida</h3>
+        <p class="text-sm">[Descripción del diferenciador]</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRECIOS -->
+  <section id="precios" class="py-20">
+    <h2 class="text-center font-heading text-4xl font-bold text-navy mb-12">Nuestros precios</h2>
+    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-8 px-4">
+      <div class="border rounded-lg p-8 text-center">
+        <h3 class="font-heading text-navy text-2xl font-bold">Servicio pequeño</h3>
+        <p class="text-turquoise text-4xl font-bold my-4">S/. 100</p>
+        <ul class="text-left space-y-2 text-sm mb-6"><li>✔ [Detalle]</li></ul>
+        <a href="https://wa.me/51[TELÉFONO]" class="block bg-turquoise text-white py-3 rounded-md">Contáctanos</a>
+      </div>
+      <!-- Plan grande igual -->
+    </div>
+  </section>
+
+  <!-- FAQ (acordeón nativo) -->
+  <section id="faq" class="py-20 bg-softgray">
+    <h2 class="text-center font-heading text-4xl font-bold text-navy mb-12">Preguntas frecuentes</h2>
+    <div class="max-w-3xl mx-auto px-4 space-y-3">
+      <details class="bg-white rounded-lg p-4 shadow">
+        <summary class="font-heading text-navy font-semibold cursor-pointer">¿Qué trabajos realizan?</summary>
+        <p class="mt-2 text-sm">[Respuesta]</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-navy text-white py-14">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8 px-4 text-sm">
+      <div><img src="[LOGO]" class="h-12 mb-4"><p>[Descripción breve]</p></div>
+      <div><h4 class="font-heading font-semibold mb-3">Contáctenos</h4>
+        <p>📞 [TEL]</p><p>✉ [EMAIL]</p><p>📍 [DIRECCIÓN]</p><p>🕒 [HORARIO]</p></div>
+      <div><h4 class="font-heading font-semibold mb-3">Servicios</h4><ul class="space-y-1"><li>[Servicio]</li></ul></div>
+      <div><h4 class="font-heading font-semibold mb-3">Últimos artículos</h4></div>
+    </div>
+    <p class="text-center text-xs mt-10 opacity-70">© 2026 [NOMBRE]. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- WHATSAPP FLOTANTE -->
+  <a href="https://wa.me/51[TELÉFONO]" class="fixed bottom-6 right-6 bg-wa text-white rounded-full w-14 h-14 flex items-center justify-center text-2xl shadow-lg z-50">💬</a>
+
+</body>
+</html>
+```
+
+## 7. Mejoras concretas que debes indicarle a Claude Cowork
+
+Corrige los defectos del original: consistencia total entre el teléfono mostrado y el del enlace `tel:` (en el original no coinciden), line-height del cuerpo más generoso para legibilidad, esquinas redondeadas en botones, contenido de blog y footer realmente de gasfitería (el original tiene texto de "psicólogos" pegado por error). Añade lo que el original no tiene: testimonios/reseñas, formulario de contacto además del WhatsApp, sección de cobertura por distritos, datos estructurados **LocalBusiness Schema (JSON-LD)** para SEO local, imágenes en formato WebP con lazy-loading, y meta tags Open Graph.
+
+## 8. Datos que debes recopilar de tu cliente antes de generar
+
+Para que Claude Cowork rellene las variables `[...]` del código: nombre y logo, ciudad/distritos de cobertura, teléfono/WhatsApp reales, email, dirección, horario, eslogan, los 4 diferenciadores, lista de servicios, estructura de precios con detalles, las 6 FAQ con respuestas, fotos reales de trabajos, y redes sociales.
+
+---
+
+Con este documento Claude Cowork tiene el stack recomendado, la paleta y tipografía exactas, la estructura sección por sección y un esqueleto de código funcional. ¿Quieres que prepare también los **textos de contenido** (hero, descripciones, FAQ) o el **JSON-LD de SEO local** ya redactados para incluirlos en el mismo paquete que le pasas a Cowork?
