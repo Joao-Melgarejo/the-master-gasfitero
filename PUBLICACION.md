@@ -10,7 +10,7 @@ Extraer el ZIP en la raíz pública del alojamiento y conectar el dominio con HT
 
 ## Contacto
 
-El formulario prepara un mensaje para el WhatsApp **936 872 862**. El visitante debe pulsar Enviar dentro de WhatsApp. No se registran solicitudes en un servidor ni se guardan borradores del formulario. El enlace directo de WhatsApp y el teléfono están disponibles aunque JavaScript falle.
+El formulario prepara un mensaje para el WhatsApp **924 335 862**. El visitante debe pulsar Enviar dentro de WhatsApp. No se registran solicitudes en un servidor ni se guardan borradores del formulario. El enlace directo de WhatsApp y el teléfono están disponibles aunque JavaScript falle.
 
 Se conservaron los datos comerciales existentes: teléfonos, dirección, correo, horario de emergencias, razón social, RUC, experiencia, acreditaciones y clientes mencionados. El dominio fue confirmado durante esta revisión. La empresa debe verificar la vigencia de los demás datos, las condiciones de garantía y el permiso para mencionar clientes antes del lanzamiento.
 

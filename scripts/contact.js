@@ -18,7 +18,7 @@ function updateNotes() {
     ? "Describe lo que ocurre y te ayudamos a identificar el servicio."
     : "El alcance y el costo se confirman después de evaluar el problema.";
   document.querySelector("#urgency-note").textContent = urgency.value === "Urgente"
-    ? "Para una emergencia, llama al 936 872 862 y confirma la disponibilidad."
+    ? "Para una emergencia, llama al 924 335 862 y confirma la disponibilidad."
     : "Coordinaremos contigo el día y la hora de la visita.";
 }
 
@@ -40,7 +40,7 @@ if (form) {
     const phone = form.elements.namedItem("phone");
     const digits = phone.value.replace(/\D/g, "");
     phone.setCustomValidity(/^[+\d\s()-]+$/.test(phone.value) && digits.length >= 9 && digits.length <= 15
-      ? "" : "Escribe un teléfono válido, por ejemplo 936 872 862.");
+      ? "" : "Escribe un teléfono válido, por ejemplo 924 335 862.");
     if (!form.reportValidity()) return;
     const data = Object.fromEntries(new FormData(form));
     const message = [
@@ -54,7 +54,7 @@ if (form) {
     ].join("\n");
     status.textContent = "Abriendo WhatsApp. Revisa el mensaje y pulsa Enviar allí para contactar a Fernando.";
     // Same-tab navigation avoids pop-up blockers. Nothing is sent automatically.
-    window.location.assign(`https://wa.me/51936872862?text=${encodeURIComponent(message)}`);
+    window.location.assign(`https://wa.me/51924335862?text=${encodeURIComponent(message)}`);
   });
   service.addEventListener("change", updateNotes);
   urgency.addEventListener("change", updateNotes);

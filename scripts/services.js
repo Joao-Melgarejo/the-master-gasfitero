@@ -1,6 +1,6 @@
 import { getServiceCategories, getServices } from "./data.js";
 
-const WHATSAPP_NUMBER = "51936872862";
+const WHATSAPP_NUMBER = "51924335862";
 
 const grid = document.querySelector("#services-grid");
 const status = document.querySelector("#services-status");

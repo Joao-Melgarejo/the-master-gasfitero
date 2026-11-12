@@ -5,7 +5,7 @@ import test from 'node:test';
 
 const code = readFileSync(new URL('../scripts/contact.js', import.meta.url), 'utf8');
 
-function setup({ phone = '+51 936 872 862', notes = 'Una fuga debajo del lavatorio.', query = '?service=griferias' } = {}) {
+function setup({ phone = '+51 924 335 862', notes = 'Una fuga debajo del lavatorio.', query = '?service=griferias' } = {}) {
   const fields = Object.fromEntries(Object.entries({
     fullname: '  Cliente de prueba  ', phone, district: 'Nuevo Chimbote', notes,
     urgency: 'Urgente', preferredDate: '2026-12-20', service: '',
@@ -39,9 +39,9 @@ test('preselects service and prepares every field without requiring browser stor
   assert.equal(form.fields.service.value, 'griferias');
   assert.equal(form.button.disabled, false);
   const url = new URL(form.submit());
-  assert.equal(url.origin + url.pathname, 'https://wa.me/51936872862');
+  assert.equal(url.origin + url.pathname, 'https://wa.me/51924335862');
   const message = url.searchParams.get('text');
-  for (const expected of ['Cliente de prueba', 'Instalación y reparación de griferías', 'Una fuga debajo del lavatorio.', 'Nuevo Chimbote', 'Urgente', '2026-12-20', '+51 936 872 862']) assert.ok(message.includes(expected), expected);
+  for (const expected of ['Cliente de prueba', 'Instalación y reparación de griferías', 'Una fuga debajo del lavatorio.', 'Nuevo Chimbote', 'Urgente', '2026-12-20', '+51 924 335 862']) assert.ok(message.includes(expected), expected);
   assert.ok(!message.includes('  Cliente'));
 });
 test('invalid telephone never opens WhatsApp', () => {
